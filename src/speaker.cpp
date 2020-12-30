@@ -7,20 +7,9 @@ using namespace std;
 ros::Publisher my_pub;
 ros::Subscriber my_sub;
 
-void CallBack(std_msgs::String mg)
+void CallBack(const std_msgs::String::ConstPtr& mg)
 {
-//cout<<"Reply:";
-cout<<"Message:";
-    cin>>chat;
-      std_msgs:: String msg;
-      msg.data = chat;
-      //ROS_INFO("%s",msg.data.c_str());
-     // cout<<msg.data.c_str();
-      my_pub.publish(msg);
-      cout<<endl;
-cout<<"hello";
- cout<<mg.data<<endl;
- // ROS_INFO("I heard: [%s]", mg->data.c_str());
+      ROS_INFO("I heard: [%s]", mg->data.c_str());
 }
 int main(int argc, char **argv)
 {
@@ -29,7 +18,21 @@ int main(int argc, char **argv)
    my_pub = nh.advertise<std_msgs::String>("tomic",10);   
   cout<<"new msg";
    my_sub = nh.subscribe("tospeaker",10,CallBack);
-   ros::spin();
- 
+   while (ros::ok())
+   {
+     cout<<"Message:";
+    cin>>chat;
+      std_msgs:: String msg;
+      msg.data = chat;
+      //ROS_INFO("%s",msg.data.c_str());
+     // cout<<msg.data.c_str();
+      my_pub.publish(msg);
+      cout<<endl;
+cout<<"hello";
+ cout<<msg.data<<endl;
+   
+   
+   ros::spinOnce();
+   }
 return 0;
 }
