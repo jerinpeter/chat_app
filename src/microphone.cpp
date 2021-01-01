@@ -20,9 +20,16 @@ int main(int argc , char **argv)
 {
     ros::init(argc,argv,"microphone");
     ros::NodeHandle nh;
+
+    ros::AsyncSpinner spinner(2);
+    spinner.start();
+  
+    
     my_sub = nh.subscribe("tomic",10,CallBack);
     my_pub = nh.advertise<std_msgs::String>("tospeaker",10);
-    ros::spin();
+
+    ros::waitForShutdown();
+
     return 0;
 
 }
