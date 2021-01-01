@@ -15,24 +15,29 @@ int main(int argc, char **argv)
 {
   ros::init(argc,argv,"speaker");
   ros::NodeHandle nh;
+
+  ros::AsyncSpinner spinner(2);
+  spinner.start();
+  
+  
    my_pub = nh.advertise<std_msgs::String>("tomic",10);   
   cout<<"new msg";
    my_sub = nh.subscribe("tospeaker",10,CallBack);
    while (ros::ok())
    {
-     cout<<"Message:";
+    cout<<"Message:";
     cin>>chat;
-      std_msgs:: String msg;
-      msg.data = chat;
+    std_msgs:: String msg;
+    msg.data = chat;
       //ROS_INFO("%s",msg.data.c_str());
      // cout<<msg.data.c_str();
-      my_pub.publish(msg);
-      cout<<endl;
-cout<<"hello";
- cout<<msg.data<<endl;
+    my_pub.publish(msg);
+    cout<<endl;
+    cout<<"hello";
+    cout<<msg.data<<endl;
    
    
-   ros::spinOnce();
+   //ros::spinOnce();
    }
 return 0;
 }
