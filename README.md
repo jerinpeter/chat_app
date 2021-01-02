@@ -10,6 +10,38 @@
 
     * /tospeaker - for publishing msg from microphone node to speaker node, [subscribed by speaker node]
 
+ ## Concept of AsyncSpinner 
+
+   #### why ros::spin() is not used?
+
+* In this package we have 2 nodes, a speaker and a microphone
+
+* speaker is publishing msgs in the main func inside a while loop and a simple callback function is written to receive messages from the mic
+
+* All user callbacks will be called from within the ros::spin() call. ros::spin() will not return until the node has been shutdown, either through a call to ros::shutdown() or a Ctrl-C
+
+* Thus affecting the publishing of the messages from the speaker node in the absense of an Async spinnner
+
+
+* The main problem arises in the microphone node where the publishing is executed in the callback func. which maybe delayed as it is waiting for the user i/p.
+
+* Thus resulting in messegs not getting transmitted from the speaker node or not getting published from the microphone node.
+
+### Why AsyncSpinner?
+
+* The standard ROSCPP spinner (ros::spin()) is single threaded, meaning it will only execute callbacks one by one.
+
+* On the other hand **Async Spinner** is a threaded spinner and callbacks will have it's own thread
+
+* It is ideal in dealing with complicated callback funtions
+
+## Reference
+
+* [ROS WIKI](http://wiki.ros.org/roscpp/Overview/Callbacks%20and%20Spinning)
+
+* [ROS AsyncSpinner Tutorial](https://roboticsbackend.com/ros-asyncspinner-example/)
+
+
 ## DEMO
 
 ![Working](demo/chatapp.gif)
