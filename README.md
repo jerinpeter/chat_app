@@ -12,5 +12,4 @@
 
 ## DEMO
 
-![vid](https://drive.google.com/file/d/1-tCT4E7OTPpSZfyFYjbdpjM8DP5f6V3b/view?usp=sharing
-)
+![Working](demo/chatapp.gif)
