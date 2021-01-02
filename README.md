@@ -8,3 +8,4 @@
 * Write now I did the publishing of the /tospeaker topic in the call back function of the microphone.cpp file
 * which is not an apt way, I also tried declaring globally, which says it needs a nodehandle and if declare the nodehandle also globally, then the compiler says there should be an init function before declaring a node handle.
 * these are my problems.. any solutions to these?
+* test...
