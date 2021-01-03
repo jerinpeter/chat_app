@@ -21,8 +21,8 @@ git clone https://github.com/jerinpeter/ChatApp
 
   rosrun ChatApp speaker
 
-  rosrun ChatApp microphone ```
-
+  rosrun ChatApp microphone
+```
 ## Description
 
 ### Working in brief 
