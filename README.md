@@ -31,6 +31,8 @@ Wrote a simple chat application consisting of 2 nodes in :::ROS, Implementation 
 
     * /tospeaker - for publishing msg from microphone node to speaker node, [subscribed by speaker node]
 
+   ![Rqt_graph](demo/chatapp.png)
+
  ## Concept of AsyncSpinner 
 
    #### why ros::spin() is not used?
@@ -60,10 +62,6 @@ Wrote a simple chat application consisting of 2 nodes in :::ROS, Implementation 
 
 ![Working](demo/chatapp.gif)
 
-
-
-
-![Rqt_graph](demo/chatapp.png)
 
 ## Reference
 
