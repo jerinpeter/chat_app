@@ -11,13 +11,13 @@ Wrote a simple chat application consisting of 2 nodes in :::ROS, Implementation 
 * Compiler  : Catkin
 
 ## Building & Installation
-<b>git clone https://github.com/jerinpeter/ChatApp</b>
+```git clone https://github.com/jerinpeter/ChatApp```
 
-<b>catkin_make</b>
+``` catkin_make ```
 
-<b>rosrun ChatApp speaker</b>
+``` rosrun ChatApp speaker```
 
-<b>rosrun ChatApp microphone</b>
+``` rosrun ChatApp microphone```
 
 ## Description
 
