@@ -1,6 +1,27 @@
 # Simple chat Application based on talker and listener node in :::ROS
 
-## Working in brief 
+## Introduction
+Wrote a simple chat application consisting of 2 nodes in :::ROS, Implementation of basic subscriber-publisher,using the concept of multithreading using AsyncSpinner in ROS.
+
+## Prerequesties
+
+* Ubuntu version : 20.04 / 18.04
+* ROS version : Noetic / Melodic
+* Editor used : Vscode
+* Compiler  : Catkin
+
+## Building & Installation
+<b>git clone https://github.com/jerinpeter/ChatApp</b>
+
+<b>catkin_make</b>
+
+<b>rosrun ChatApp speaker</b>
+
+<b>rosrun ChatApp microphone</b>
+
+## Description
+
+### Working in brief 
 
 * Uses 2 nodes Speaker and Microphone
 * Both the nodes subscribe and publish to each other
@@ -35,13 +56,17 @@
 
 * It is ideal in dealing with complicated callback funtions
 
+## DEMO
+
+![Working](demo/chatapp.gif)
+
+
+
+
+![Rqt_graph](demo/chatapp.png)
+
 ## Reference
 
 * [ROS WIKI](http://wiki.ros.org/roscpp/Overview/Callbacks%20and%20Spinning)
 
 * [ROS AsyncSpinner Tutorial](https://roboticsbackend.com/ros-asyncspinner-example/)
-
-
-## DEMO
-
-![Working](demo/chatapp.gif)
