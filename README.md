@@ -42,6 +42,6 @@
 * [ROS AsyncSpinner Tutorial](https://roboticsbackend.com/ros-asyncspinner-example/)
 
 
-## DEMO TEST
+## DEMO 
 
 ![Working](demo/chatapp.gif)
