@@ -3,25 +3,25 @@
 ## Introduction
 Wrote a simple chat application consisting of 2 nodes in :::ROS, Implementation of basic subscriber-publisher,using the concept of multithreading using AsyncSpinner in ROS.
 
-## Prerequesties
+## Prerequisites
 
-* Ubuntu version : 20.04 / 18.04
-* ROS version : Noetic / Melodic
-* Editor used : Vscode
-* Compiler  : Catkin
+* [Ubuntu version : 20.04 / 18.04](https://ubuntu.com/download/desktop)
+* [ROS version : Noetic / Melodic](http://wiki.ros.org/noetic/Installation/Ubuntu)
+* Editor used : [Vscode](https://code.visualstudio.com/download)
+* Compiler  : catkin
 
 ## Building & Installation
-``` cd catkin_ws/src``` 
+``` cd catkin_ws/src 
 
-```git clone https://github.com/jerinpeter/ChatApp```
+git clone https://github.com/jerinpeter/ChatApp
 
-``` cd .. ```
+  cd .. 
 
-``` catkin_make ```
+  catkin_make
 
-``` rosrun ChatApp speaker```
+  rosrun ChatApp speaker
 
-``` rosrun ChatApp microphone```
+  rosrun ChatApp microphone ```
 
 ## Description
 
