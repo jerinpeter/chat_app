@@ -13,7 +13,7 @@ Wrote a simple chat application consisting of 2 nodes in :::ROS, Implementation 
 ## Building & Installation
 ``` cd catkin_ws/src 
 
-git clone https://github.com/jerinpeter/ChatApp
+  git clone https://github.com/jerinpeter/ChatApp
 
   cd .. 
 
