@@ -11,7 +11,11 @@ Wrote a simple chat application consisting of 2 nodes in :::ROS, Implementation 
 * Compiler  : Catkin
 
 ## Building & Installation
+``` cd catkin_ws/src``` 
+
 ```git clone https://github.com/jerinpeter/ChatApp```
+
+``` cd .. ```
 
 ``` catkin_make ```
 
