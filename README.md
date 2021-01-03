@@ -72,3 +72,6 @@ Wrote a simple chat application consisting of 2 nodes in :::ROS, Implementation 
 * [ROS WIKI](http://wiki.ros.org/roscpp/Overview/Callbacks%20and%20Spinning)
 
 * [ROS AsyncSpinner Tutorial](https://roboticsbackend.com/ros-asyncspinner-example/)
+
+* [Several ways of writting a ROS Node](https://yuzhangbit.github.io/tools/several-ways-of-writing-a-ros-node/)
+
