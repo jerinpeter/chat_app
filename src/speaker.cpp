@@ -40,6 +40,7 @@ int main(int argc, char **argv)
       my_pub.publish(msg);       //publsing the msg
       cout<<endl; 
       cout<<msg.data<<endl;
+    
     }
 
 return 0;

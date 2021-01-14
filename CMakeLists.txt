@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.0.2)
-project(ChatApp)
+project(chat_app)
 
 ## Compile as C++11, supported in ROS Kinetic and newer
 # add_compile_options(-std=c++11)
@@ -105,7 +105,7 @@ find_package(catkin REQUIRED COMPONENTS
 ## DEPENDS: system dependencies of this project that dependent projects also need
 catkin_package(
 #  INCLUDE_DIRS include
-#  LIBRARIES ChatApp
+#  LIBRARIES chat_app
 #  CATKIN_DEPENDS geometry_msgs roscpp rospy std_msgs
 #  DEPENDS system_lib
 )
@@ -123,7 +123,7 @@ include_directories(
 
 ## Declare a C++ library
 # add_library(${PROJECT_NAME}
-#   src/${PROJECT_NAME}/ChatApp.cpp
+#   src/${PROJECT_NAME}/chat_app.cpp
 # )
 
 ## Add cmake target dependencies of the library
@@ -204,7 +204,7 @@ target_link_libraries(microphone
 #############
 
 ## Add gtest based cpp test target and link libraries
-# catkin_add_gtest(${PROJECT_NAME}-test test/test_ChatApp.cpp)
+# catkin_add_gtest(${PROJECT_NAME}-test test/test_chat_app.cpp)
 # if(TARGET ${PROJECT_NAME}-test)
 #   target_link_libraries(${PROJECT_NAME}-test ${PROJECT_NAME})
 # endif()
